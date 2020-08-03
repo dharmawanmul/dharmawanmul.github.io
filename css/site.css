@@ -1,0 +1,616 @@
+/* =================================================
+    Default Theme
+    ------------------------------------------------
+    Fonts: Raleway & Open Sans
+    ------------------------------------------------
+    Colors:
+        Cambridge Blue      : #B9D8C2
+        Light Blue          : #9AC2C9
+        Cadet Grey          : #8AA1B1
+        Rifle Green         : #4A5043
+        Sunglow             : #FFCB47
+===================================================*/
+
+/* =================================================
+                    HTML & Body
+===================================================*/
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #9AC2C9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", "sans-serif";
+}
+
+p {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+section {
+  background: #fff;
+  overflow: hidden;
+}
+
+/* =================================================
+                      Preloader
+===================================================*/
+#preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+  background-image: url("../images/loading-bar.gif");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+/* =================================================
+                        Home
+===================================================*/
+#home {
+  background: none;
+  height: 100%;
+}
+
+#home-content {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home-heading h1 {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+}
+
+#home-heading h1 span {
+  color: #FFCB47;
+  font-weight: 500;
+}
+
+#home-bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background: url("../videos/video-poster.png") no-repeat;
+  background-size: cover;
+}
+
+#home-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#home-text p {
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  margin: 8px 0 30px 0;
+}
+
+/* =================================================
+                    Content Box
+===================================================*/
+.content-box-lg {
+  padding: 100px 0;;
+}
+
+.content-box-md {
+  padding: 100px 0;;
+}
+
+/* =================================================
+                      Headings
+===================================================*/
+.vertical-heading h5 {
+  color: #FFCB47;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  word-spacing: 9px;
+  display: inline-block;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  position: relative;
+  top: 60px;
+  left: -53px;
+}
+
+.vertical-heading h2 {
+  margin: 0 0 0 35px;
+}
+
+.horizontal-heading {
+  margin-bottom: 80px;
+}
+
+.horizontal-heading h2,
+.vertical-heading h2 {
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 45px;
+}
+
+.horizontal-heading h5 {
+  font-size: 16px;
+  color: #F4C613;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.horizontal-heading h2 {
+  margin: 0;
+}
+
+/*==================================================
+                        About
+===================================================*/
+/*=================== About One ===================*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  line-height: 45px;
+}
+
+#about-right p:first-child {
+  margin-bottom: 30px;
+}
+
+#about-bottom {
+  margin-top: 60px;
+}
+
+#about-bottom img {
+  margin: 0 auto;
+}
+/*=================== About Two ===================*/
+#about-02 {
+  background-color: #F4F4F4;
+}
+
+.about-item {
+  background-color: #fff;
+  padding: 80px 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  color: black;
+}
+
+.about-item i {
+  font-size: 32px;
+  margin: 0;
+  color: #4A5043
+}
+
+.about-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.about-item hr {
+  width: 45px;
+  height: 3px;
+  background-color: #FFCB47;
+  margin: 0 auto;
+  border: none;
+}
+
+.about-item p {
+  margin-top: 20px;
+}
+/*================== Hover State= =================*/
+.about-item:hover {
+  background-color: #FFCB47;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+  color: #fff;
+}
+
+.about-item:hover hr {
+  background-color: #fff;
+}
+
+.about-item,
+.about-item i,
+.about-item hr {
+  transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+}
+
+.about-item:hover i {
+  transform: translateY(-20px);
+}
+
+/*==================================================
+                      Teams
+===================================================*/
+#team-left .vertical-heading {
+  min-height: 160px;
+}
+
+.team-member {
+  margin: 8px;
+  position: relative;
+}
+
+.team-member-overlay {
+  background-color: rgba(33, 34, 38, .9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 300ms linear;
+}
+
+.team-member-info {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.team-member-info h6 {
+  color: #FFCB47;
+  font-size: 16px;
+  margin: 0;
+}
+
+.team-member-info p {
+  color: #fff;
+}
+
+.team-member:hover .team-member-overlay {
+  opacity: 1;
+}
+
+/*==================================================
+                    Social Icons
+===================================================*/
+ul.social-list {
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul.social-list li {
+  display: inline-block;
+  padding: 0;
+}
+
+ul.social-list li a {
+  border: 1px solid #fff;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+  background-color: #3B5998;
+  border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+  background-color: #00ACEE;
+  border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+  background-color: #211F1F;
+  border-color: transparent;
+}
+
+/*==================================================
+                   Progress Bar
+===================================================*/
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill h4 {
+  line-height: 62px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.progress {
+  height: 18px;
+  border-radius: 0;
+  background-color: #EFEFEF;
+  overflow: visible;
+}
+
+.progress-bar {
+  background-color: #F4C613;
+  position: relative;
+}
+
+.progress-bar span {
+  font-size: 11px;
+  font-weight: 100;
+  font-family: "Open sans", "sans serif";
+  padding: 3px;
+  position: absolute;
+  left: 50%;
+}
+
+/*==================================================
+                   Statement
+===================================================*/
+#statement {
+  background: url("../images/dog-sleeping.jpeg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#statement .content-box-lg {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#statement-text h3 {
+  color: #fff;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+#statement-text p {
+  font-size: 14px;
+  color: #F4C613;
+  font-family: "Raleway", "sans serif";
+  margin-top: 8px;
+}
+
+#statement-text i {
+  font-size: 14px;
+  position: relative;
+  top: -15px;
+}
+
+/*==================================================
+                   Services
+===================================================*/
+#services-01 img {
+  margin: 40px 0;
+}
+
+.service {
+  margin: 35px 0;
+}
+
+.service .icon {
+  font-size: 42px;
+  margin: 0;
+}
+
+.service .icon,
+.service h5,
+.service p {
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+}
+
+.service:hover .icon {
+  color: #F4C613;
+  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+}
+
+.service h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  color: #F4C613;
+  margin: 0 0 6px 0;
+}
+
+.service:hover h5 {
+  color: #4A5043;
+  font-weight: 900;
+}
+
+.service h4 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+.service:hover h4 {
+  color: #F4C613;
+}
+
+.service p {
+  line-height: normal;
+}
+
+.service:hover p {
+  color: #000;
+  font-weight: 500;
+}
+
+/*==================================================
+              Services [Responsive Tabs]
+===================================================*/
+#services-02 {
+  background: #F4F4F4;
+}
+
+#services-tabs ul {
+  margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+  padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+  font-family: "Raleway", "sans serif";
+  font-size: 18px;
+  color: #212226;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0;
+  text-decoration: none;
+}
+
+#services-tabs ul li.r-tabs-state-active a {
+  color: #F4C613;
+  font-weight: 700;
+  border-bottom: 3px solid #F4C613;
+  padding-bottom: 5px;
+  transition: border-color 300ms linear;
+  -webkit-transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+  padding: 0;
+}
+
+.service-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+  background: #fff;
+  padding: 59px 30px;
+  min-height: 500px;
+}
+
+.service-tab h2 {
+  font-size: 48px;
+  color: #4A5043;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.service-tab h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-tab p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+/*==================================================
+                  Owl Carousel
+===================================================*/
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  color: #4A5043;
+  font-size: 40px;
+  background: none;
+  margin: 0;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: #212226;
+}
+
+/* =================================================
+                      Buttons
+===================================================*/
+.btn-general {
+  font-family: "Raleway", "sans-serif";
+  border-radius: 28px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 6px;
+  padding: 12px 46px 12px 46px;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+.btn-home {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-home:hover, .btn-home:focus {
+  color: #fff;
+  background-color: #FFCB47;
+  border: 1px solid #FFCB47;
+}
+
+.btn-yellow {
+  color: #fff;
+  border: 1px solid #F4C613;
+  background-color: #F4C613;
+}
+
+.btn-yellow:hover, .btn-yellow:focus {
+  color: #fff;
+  background-color: #212226;
+  border: 1px solid #212226;
+}
+
+/* =================================================
+                      Arrow Down
+===================================================*/
+#arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-left: -16px;
+  z-index: 1;
+}
+
+#arrow-down:hover, #arrow-down:focus {
+  color: #FFCB47;
+}
