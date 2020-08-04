@@ -2,6 +2,12 @@
 <html>
 
 <head>
+  <!-- Fav Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+
   <title>Company Profile</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
@@ -22,6 +28,9 @@
 
   <!-- Responsive Tabs -->
   <link rel="stylesheet" href="css/responsiveTabs/responsive-tabs.css">
+
+  <!-- Magnific -->
+  <link rel="stylesheet" href="css/magnific/magnific-popup.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/site.css">
@@ -465,112 +474,309 @@
 
     <div id="services-02">
       <div class="content-box-md">
-        <div id="services-tabs">
-          <ul class="text-center">
-            <li><a href="#service-tab-1">Walking</a></li>
-            <li><a href="#service-tab-2">Bathing</a></li>
-            <li><a href="#service-tab-3">Socializing</a></li>
-            <li><a href="#service-tab-4">Nurturing</a></li>
+        <div class="container text-center">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+          <ul class="nav navbar-nav">
+            <li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a class="nav-link" href="#">Walking</a></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a class="nav-link" href="#">Bathing</a></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a class="nav-link" href="#">Socializing</a></li>
+            <li data-target="#myCarousel" data-slide-to="3" class="nav-item"><a class="nav-link" href="#">Nurturing</a></li>
           </ul>
-
-          <!-- Service Tab 01 -->
-          <div id="service-tab-1" class="service-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="../images/dog-service-01.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
-                </div>
-                <div class="col-md-6">
-                  <div class="tab-bg">
-                    <h2>01</h2>
-                    <h3>Nature's Curiosity</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                       similique sunt in culpa qui officia deserunt mollitia animi.
-                    </p>
-
-                    <div id="services-02-btn">
-                      <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+          
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+          
+            <div class="carousel-item active">
+              <div id="service-tab-1" class="service-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="../images/dog-service-01.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="tab-bg">
+                        <h2>01</h2>
+                        <h3>Nature's Curiosity</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                           similique sunt in culpa qui officia deserunt mollitia animi.
+                        </p>
+    
+                        <div id="services-02-btn">
+                          <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Service Tab 02 -->
-          <div id="service-tab-2" class="service-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="../images/dog-service-02.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
-                </div>
-                <div class="col-md-6">
-                  <div class="tab-bg">
-                    <h2>02</h2>
-                    <h3>Luxurious Bath</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                       similique sunt in culpa qui officia deserunt mollitia animi.
-                    </p>
-
-                    <div id="services-02-btn">
-                      <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+            <!-- End Item -->
+      
+            <div class="carousel-item">
+              <div id="service-tab-2" class="service-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="../images/dog-service-02.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="tab-bg">
+                        <h2>02</h2>
+                        <h3>Luxurious Bath</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                           similique sunt in culpa qui officia deserunt mollitia animi.
+                        </p>
+    
+                        <div id="services-02-btn">
+                          <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Service Tab 03 -->
-          <div id="service-tab-3" class="service-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="../images/dog-service-03.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
-                </div>
-                <div class="col-md-6">
-                  <div class="tab-bg">
-                    <h2>03</h2>
-                    <h3>Friendly Environment</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                       similique sunt in culpa qui officia deserunt mollitia animi.
-                    </p>
-
-                    <div id="services-02-btn">
-                      <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+            <!-- End Item -->
+            
+            <div class="carousel-item">
+              <div id="service-tab-3" class="service-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="../images/dog-service-03.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="tab-bg">
+                        <h2>03</h2>
+                        <h3>Friendly Environment</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                           similique sunt in culpa qui officia deserunt mollitia animi.
+                        </p>
+    
+                        <div id="services-02-btn">
+                          <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Service Tab 04 -->
-          <div id="service-tab-4" class="service-tab">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="../images/dog-service-04.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
-                </div>
-                <div class="col-md-6">
-                  <div class="tab-bg">
-                    <h2>04</h2>
-                    <h3>High-Quality Food</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-                       similique sunt in culpa qui officia deserunt mollitia animi.
-                    </p>
-
-                    <div id="services-02-btn">
-                      <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+            <!-- End Item -->
+            
+            <div class="carousel-item">
+              <div id="service-tab-4" class="service-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img src="../images/dog-service-04.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="tab-bg">
+                        <h2>04</h2>
+                        <h3>High-Quality Food</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                           similique sunt in culpa qui officia deserunt mollitia animi.
+                        </p>
+    
+                        <div id="services-02-btn">
+                          <a class="btn btn-general btn-yellow" href="#services" title="Get In Touch" role="button">Get In Touch</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-        </div>
+            <!-- End Item -->
+                    
+          </div><!-- End Carousel Inner -->
+        </div><!-- End Carousel -->
+      </div>
       </div>
     </div>
   </section>
   <!-- Services Ends -->
+
+  <!-- Pets -->
+  <section id="pets">
+    <div class="content-box-md">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="vertical-heading">
+              <h5>See The Pets</h5>
+              <h2>Our <br>Beloved <strong>Pets</strong></h2>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div id="isotope-filters">
+              <button class="btn active" data-filter="*"><span>All</span></button>
+              <button class="btn" data-filter=".husky"><span>Siberian Husky</span></button>
+              <button class="btn" data-filter=".collie"><span>Border Collie</span></button>
+              <button class="btn" data-filter=".retriever"><span>Golden Retriever</span></button>
+              <button class="btn" data-filter=".shepherd"><span>German Shepherd</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Items Wrapper -->
+      <section id="pets-wrapper">
+        <div class="container-fluid">
+          <div class="row no-gutter" id="isotope-container">
+            <div class="col-md-3 retriever">
+              <!-- First Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo01.jpg" title="Two Yellow Labrador Retriever Puppies">
+                  <img src="images/pets/photo01.jpg" alt="pet 01" class="img-responsive">
+                  <div class="pet-item-overlay">
+                      <div class="pet-item-details text-center">
+                      <!-- Item Header -->
+                      <h3>Golden Retriever</h3>
+                      <!-- Item Strips -->
+                      <span></span>
+                      <!-- Item Desc-->
+                      <p>Milo & Lilo</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 husky">
+              <!-- Second Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo02.jpg" title="Black and White Siberian Husky Puppy on Brown Grass Field">
+                <img src="images/pets/photo02.jpg" alt="pet 02" class="img-responsive">
+                <div class="pet-item-overlay">
+                  <div class="pet-item-details text-center">
+                  <!-- Item Header -->
+                  <h3>Siberian Husky</h3>
+                  <!-- Item Strips -->
+                  <span></span>
+                  <!-- Item Desc-->
+                  <p>Muffin</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 shepherd">
+              <!-- Third Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo03.jpg" title="Short-coated Beige and Brown Dog">
+                <img src="images/pets/photo03.jpg" alt="pet 03" class="img-responsive">
+                <div class="pet-item-overlay">
+                  <div class="pet-item-details text-center">
+                  <!-- Item Header -->
+                  <h3>German Shepherd</h3>
+                  <!-- Item Strips -->
+                  <span></span>
+                  <!-- Item Desc-->
+                  <p>Apollo</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 husky">
+              <!-- Fourth Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo04.jpg" title="Photo of Siberian Husky">
+                <img src="images/pets/photo04.jpg" alt="pet 04" class="img-responsive">
+                <div class="pet-item-overlay">
+                  <div class="pet-item-details text-center">
+                  <!-- Item Header -->
+                  <h3>Siberian Husky</h3>
+                  <!-- Item Strips -->
+                  <span></span>
+                  <!-- Item Desc-->
+                  <p>Ghost</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 collie">
+              <!-- Fifth Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo05.jpg" title="Selective Focus Photography of Adult Black and White Border Collie">
+                  <img src="images/pets/photo05.jpg" alt="pet 01" class="img-responsive">
+                  <div class="pet-item-overlay">
+                      <div class="pet-item-details text-center">
+                      <!-- Item Header -->
+                      <h3>Golden Retriever</h3>
+                      <!-- Item Strips -->
+                      <span></span>
+                      <!-- Item Desc-->
+                      <p>Shadow</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div><div class="col-md-3 collie">
+              <!-- Sixth Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo06.jpg" title="Close-Up Photo of Water On River">
+                  <img src="images/pets/photo06.jpg" alt="pet 01" class="img-responsive">
+                  <div class="pet-item-overlay">
+                      <div class="pet-item-details text-center">
+                      <!-- Item Header -->
+                      <h3>Golden Retriever</h3>
+                      <!-- Item Strips -->
+                      <span></span>
+                      <!-- Item Desc-->
+                      <p>Maya</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 retriever">
+              <!-- Seventh Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo07.jpg" title="Close-Up Photo of Dog">
+                  <img src="images/pets/photo07.jpg" alt="pet 01" class="img-responsive">
+                  <div class="pet-item-overlay">
+                      <div class="pet-item-details text-center">
+                      <!-- Item Header -->
+                      <h3>Golden Retriever</h3>
+                      <!-- Item Strips -->
+                      <span></span>
+                      <!-- Item Desc-->
+                      <p>Jake</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3 retriever">
+              <!-- Eighth Item -->
+              <div class="pet-item">
+                <a href="images/pets/photo08.jpg" title="Brown and White Finnish Spitz Mix">
+                  <img src="images/pets/photo08.jpg" alt="pet 01" class="img-responsive">
+                  <div class="pet-item-overlay">
+                      <div class="pet-item-details text-center">
+                      <!-- Item Header -->
+                      <h3>Golden Retriever</h3>
+                      <!-- Item Strips -->
+                      <span></span>
+                      <!-- Item Desc-->
+                      <p>Shu</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+  <!-- Pets Ends -->
 
   <!-- Temporary Space -->
   <section>
@@ -591,7 +797,13 @@
   <script src="js/waypoints/jquery.waypoints.min.js"></script>
 
   <!-- Responsive Tabs -->
-  <script src="js/responsiveTabs/jquery.responsiveTabs.min.js"></script>
+  <!-- <script src="js/responsiveTabs/jquery.responsiveTabs.min.js"></script> -->
+
+  <!-- Isotope JS -->
+  <script src="js/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Magnific JS -->
+  <script src="js/magnific/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom JS -->
   <script src="js/script.js"></script>
@@ -635,6 +847,38 @@ Images and Videos Credits
 > White and Black English Bulldog Stands in Front of Crackers on Bowl at Daytime
 > By : freestocks.org (https://www.pexels.com/@freestocks)
 > https://www.pexels.com/photo/white-and-black-english-bulldog-stands-in-front-of-crackers-on-bowl-at-daytime-688961/
+
+> Two Yellow Labrador Retriever Puppies
+> By : Chevanon Photography (https://www.pexels.com/@chevanon)
+> https://www.pexels.com/photo/two-yellow-labrador-retriever-puppies-1108099/
+
+> Black and White Siberian Husky Puppy on Brown Grass Field
+> By : Julissa Helmuth (https://www.pexels.com/@jhelmuth)
+> https://www.pexels.com/photo/black-and-white-siberian-husky-puppy-on-brown-grass-field-3726314/
+
+> Short-coated Beige and Brown Dog
+> By : Vladislav (https://www.pexels.com/@vladislav-102984)
+> https://www.pexels.com/photo/adorable-animal-breed-canine-351406/
+
+> Photo of Siberian Husky
+> By : Tranmautritam (https://www.pexels.com/@tranmautritam)
+> https://www.pexels.com/photo/adorable-animal-blur-breed-245035/
+
+> Selective Focus Photography of Adult Black and White Border Collie
+> By : Aloïs Moubax (https://www.pexels.com/@aloismoubax)
+> https://www.pexels.com/photo/selective-focus-photography-of-adult-black-and-white-border-collie-1124002/
+
+> Close-Up Photo of Water On River
+> By : Joan Montaner (https://www.pexels.com/@joan-montaner-686959)
+> https://www.pexels.com/photo/close-up-photo-of-water-on-river-1626219/
+
+> Close-Up Photo of Dog
+> By : Mithul Varshan (https://www.pexels.com/@mithulvarshan)
+> https://www.pexels.com/photo/close-up-photo-of-dog-2408649/
+
+> Brown and White Finnish Spitz Mix
+> By : Josh Sorenson (https://www.pexels.com/@joshsorenson)
+> https://www.pexels.com/photo/brown-and-white-finnish-spitz-mix-976871/
 
 -->
 

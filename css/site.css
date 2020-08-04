@@ -543,6 +543,176 @@ ul.social-list li:nth-child(3) a:hover {
   margin-bottom: 30px;
 }
 
+#myCarousel ul {
+  margin-bottom: 40px;
+}
+
+#myCarousel ul li {
+  padding: 5px 30px;
+}
+
+#myCarousel ul li a {
+  font-family: "Raleway", "sans serif";
+  font-size: 18px;
+  color: #212226;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0;
+  text-decoration: none;
+}
+
+#myCarousel ul li.active a {
+  color: #F4C613;
+  font-weight: 700;
+  border-bottom: 3px solid #F4C613;
+  padding-bottom: 5px;
+  transition: border-color 300ms linear;
+  -webkit-transition: border-color 300ms linear;
+}
+
+.navbar-nav {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+ul.nav.navbar-nav li {
+  display: inline;
+}
+
+/*==================================================
+                      Pets
+===================================================*/
+#pets {
+  padding-bottom: 160px;
+}
+
+#pets .vertical-heading {
+  margin-bottom: 50px;
+}
+
+.row.no-gutter [class*=col-] {
+  padding: 0;
+}
+ 
+.pet-item {
+  overflow: hidden;
+  position: relative;
+} 
+
+.pet-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(14, 14, 17, 0.9);
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pet-item-details {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pet-item-details h3 {
+  color: #F4C613;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pet-item-details span {
+  display: inline-block;
+  border-top: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
+  height: 6px;
+  width: 50px;
+  margin: 11px auto 5px auto;
+}
+
+.pet-item-details p {
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pet-item:hover .pet-item-details h3 {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.pet-item:hover .pet-item-details p {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.pet-item:hover .pet-item-overlay {
+  opacity: 1;
+}
+
+/*================== Filter CSS ===================*/
+#isotope-filters {
+  margin-bottom: 10px;
+  padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+  font-family: "Raleway", "sans-serif";
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding-right: 35px;
+  outline: 0;
+}
+
+#isotope-filters button span {
+  display: block;
+  padding-bottom: 5px;
+  transition: border-color .4s ease-in-out;
+  -webkit-transition: border-color .4s ease-in-out;
+}
+
+#isotope-filters button.active span {
+  color: #F4C613;
+  border-bottom: 3px solid #F4C613;
+}
+/*================= Zoom Effect ==================*/
+.pet-item img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.pet-item img:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
 /*==================================================
                   Owl Carousel
 ===================================================*/
@@ -556,6 +726,10 @@ ul.social-list li:nth-child(3) a:hover {
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none;
   color: #212226;
+}
+
+.owl-nav [class*=owl-] {
+  outline: 0;
 }
 
 /* =================================================
