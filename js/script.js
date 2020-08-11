@@ -1,4 +1,13 @@
 /* =================================================
+                    CounterUp2
+===================================================*/
+$(function() {
+  $(".counter").counterUp({
+    delay: 10,
+    time: 2000
+  });
+});
+/* =================================================
                     Preloader
 ===================================================*/
 $(window).on('load', function() {
@@ -60,6 +69,20 @@ $(function() {
     navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
   });
 });
+
+$(function() {
+  $("#clients-list").owlCarousel({
+    items: 6,
+    autoplay: false,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+  });
+});
+
 
 /* =================================================
                     Progress Bar

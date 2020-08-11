@@ -139,6 +139,9 @@ section {
   padding: 100px 0;;
 }
 
+.content-box-sm {
+  padding: 90px 0;
+}
 /* =================================================
                       Headings
 ===================================================*/
@@ -910,6 +913,86 @@ ul.nav.navbar-nav li {
 .pricing-table.black:hover {
   background: #F4C613;
 }
+
+/*==================================================
+                    Stats
+===================================================*/
+#stats {
+  background: url("../images/stats-bg.jpeg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#stats .content-box-md {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#stats .vertical-heading {
+  margin-bottom: 50px;
+}
+
+#stats .vertical-heading h2 {
+  color: #fff;
+}
+
+.stats-item {
+  background: rgba(61, 68, 68, 0.4);
+  border-radius: 4px;
+  min-height: 170px;
+  padding: 25px 50px;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+}
+
+.stats-item i {
+  font-size: 42px;
+  color: #F4C613;
+  margin: 0 0 6px 0;
+  transition: all 400ms linear;
+  -webkit-transition: all 400ms linear;
+}
+
+.stats-item h3 {
+  font-size: 32px;
+  color: #fff;
+  margin: 5px 0 5px 0;
+}
+
+.stats-item p {
+  color: #fff;
+  margin: 0;
+}
+
+.stats-item:hover {
+  background: #F4C613;
+}
+
+.stats-item:hover i {
+  color: #212226;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+}
+/*==================================================
+                    Clients
+===================================================*/
+#clients .horizontal-heading {
+  margin-bottom: 30px;
+}
+
+#clients-list {
+  padding: 45px 0 0 0;
+}
+
+.client {
+  padding: 0 10px;
+  max-width: 150px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.client img {
+  display: inline-block !important;
+}
+
 /*==================================================
                   Owl Carousel
 ===================================================*/
