@@ -83,6 +83,33 @@ $(function() {
   });
 });
 
+/* =================================================
+                    Google Map
+===================================================*/
+function initMap() {
+  var addressString = "Tödistrasse 7, Zürich, Switzerland";
+  var myLatlng = {lat: 47.364670, lng:8.535540};
+
+  //Render Map
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    center: myLatlng
+  });
+  //Add Marker
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "Click To See Address"
+  });
+  //Info Window
+  var infowindow = new google.maps.InfoWindow({
+    content: addressString
+  });
+
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
 
 /* =================================================
                     Progress Bar
