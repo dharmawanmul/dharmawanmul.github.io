@@ -42,6 +42,48 @@ $(function() {
 });
 
 /* =================================================
+                    Navbar
+===================================================*/
+$(function () {
+  $(window).scroll(function (){
+    if ( $(window).scrollTop() > 50 ) {
+      $("nav").addClass("navbar-dark bg-dark");
+      $("#back-to-top").fadeIn();
+    } else {
+      $("nav").removeClass("navbar-dark bg-dark");
+      $("#back-to-top").fadeOut();
+    }
+  });
+});
+
+$(function() {
+  $("#mobile-nav-open-btn").click(function () {
+    $("#mobile-nav").css("height", "100%");
+    $("#mobile-nav").css("visibility", "visible");
+    $("#mobile-nav-open-btn").css("visibility", "hidden");
+  });
+
+  $("#mobile-nav-close-btn").click(function () {
+    $("#mobile-nav").css("height", "0%");
+    $("#mobile-nav").css("visibility", "hidden");
+    $("#mobile-nav-open-btn").css("visibility", "visible");
+  });
+});
+
+/* =================================================
+                    Smooth Scroll
+===================================================*/
+$(function () {
+  $("a.smooth-scroll").click(function () {
+    var section_id = $(this).attr("href");
+
+    $("html, body").animate({
+      scrollTop: $(section_id).offset().top
+    }, 1250, "easeInOutExpo");
+  });
+});
+
+/* =================================================
                      Slider
 ===================================================*/
 $(function() {
@@ -53,7 +95,15 @@ $(function() {
     autoplayHoverPause: true,
     nav: true,
     dots: false,
-    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      }
+    }
   });
 });
 
@@ -108,6 +158,12 @@ function initMap() {
 
   marker.addListener('click', function() {
     infowindow.open(map, marker);
+  });
+
+  google.maps.event.addDomListener(window, 'resize', function() {
+    var center = map.getCenter();
+    google.maps.event.trigger(map, 'resize');
+    map.setCenter(center);
   });
 }
 
@@ -176,3 +232,18 @@ $(function() {
 //     duration: 300,
 //   });
 // });
+
+/* =================================================
+                    Animation
+===================================================*/
+$(function() {
+  new WOW().init();
+});
+
+$(window).on('load', function() {
+  $("#home-heading-1").addClass("animate__animated animate__fadeInDown");
+  $("#home-heading-2").addClass("animate__animated animate__fadeInLeft");
+  $("#home-text").addClass("animate__animated animate__zoomIn");
+  $("#home-btn").addClass("animate__animated animate__zoomIn");
+  $("#arrow-down").addClass("animate__animated animate__fadeInDown animate__infinite	infinite");
+});

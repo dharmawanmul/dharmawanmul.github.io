@@ -39,6 +39,155 @@ section {
 }
 
 /* =================================================
+                      Navbar
+===================================================*/
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: #F4C613;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link.active {
+  color: #F4C613;
+  font-weight: 500;
+}
+
+nav div.container-fluid {
+  padding: 0 85px;
+  height: 50px;
+}
+
+.img-logo {
+  height: 75px;
+}
+
+.navbar {
+  padding: 10px 0 20px 0;
+  opacity: 65%;
+}
+
+.navbar-brand {
+  padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+  font-family: "Raleway", "sans-serif";
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#mobile-nav-open-btn {
+  font-size: 30px;
+  color: #F4C613;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+}
+
+#mobile-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, .9);
+  transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  overflow-y: hidden;
+  visibility: hidden;
+}
+
+#mobile-nav-content ul.nav {
+  display: initial;
+}
+
+/* #mobile-nav-content ul.nav li {
+  padding-top: 5px;
+} */
+
+#mobile-nav-content ul.nav li a {
+  font-family: "Raleway", "sans-serif";
+  font-size: 18px;
+  color: #212226;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+#mobile-nav-close-btn {
+  font-family: "Raleway", "sans-serif";
+  font-size: 45px;
+  color: #212226;
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mobile-nav-content {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#mobile-nav-content ul.nav li a.active,
+#mobile-nav-content ul.nav li a.active {
+  color: #F4C613;
+  font-weight: 500;
+}
+
+#mobile-nav ul li {
+  margin-bottom: 20px;
+}
+
+#mobile-nav a {
+  font-family: "Raleway", "sans-serif";
+  font-size: 18px;
+  color: #212226;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+  color: #F4C613;
+  background: none;
+}
+
+/* .white-nav-top {
+  padding: 10px 0;
+  z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+  color: #212226;
+}
+
+.white-nav-top  ul.navbar-nav > li > a:hover,
+.white-nav-top  ul.navbar-nav > li > a:focus {
+  color: #F4C613;
+} */
+
+/* =================================================
                       Preloader
 ===================================================*/
 #preloader {
@@ -675,6 +824,7 @@ ul.nav.navbar-nav li {
 
 .pet-item:hover .pet-item-overlay {
   opacity: 1;
+  cursor: pointer;
 }
 /*==================================================
                   Testimonials
@@ -683,7 +833,6 @@ ul.nav.navbar-nav li {
   max-width: 72px;
   max-height: 72px;
   border-radius: 50%;
-  border: 1px solid #000;
 }
 
 #testimonials {
@@ -998,6 +1147,7 @@ ul.nav.navbar-nav li {
 ===================================================*/
 #blog {
   background: #F4F4F4;
+  color: #000;
 }
 
 #blog-left p {
@@ -1006,6 +1156,10 @@ ul.nav.navbar-nav li {
 
 #blog-btn a {
   margin: 0;
+}
+
+#blog-btn:hover a {
+  color: #fff;
 }
 
 .blog-post {
@@ -1147,6 +1301,24 @@ ul.office-details li i {
 }
 
 /*==================================================
+                    Footer
+===================================================*/
+footer {
+  background: #212226;
+  padding: 24px;
+}
+
+footer p {
+  color: #fff;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+footer p span {
+  color: #F4C613;
+}
+
+/*==================================================
                   Owl Carousel
 ===================================================*/
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
@@ -1208,10 +1380,21 @@ ul.office-details li i {
   background-color: #fff;
 }
 
-.btn-white:hover, .btn-white:focus {
+.btn-white:hover,
+.btn-white:focus {
   color: #fff;
   background-color: #212226;
   border: 1px solid #212226;
+}
+
+.btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 3px 15px;
+  border-radius: 4px;
+  font-size: 22px;
+  display: none;
 }
 
 /* =================================================
@@ -1232,4 +1415,36 @@ ul.office-details li i {
 
 #arrow-down:hover, #arrow-down:focus {
   color: #FFCB47;
+}
+
+/* =================================================
+                    Animation
+===================================================*/
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+  -webkit-animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+
+#home-heading-2 {
+  -webkit-animation-duration: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#home-text {
+  -webkit-animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+#home-btn {
+  -webkit-animation-duration: 2.5s;
+  animation-delay: 2.5s;
+}
+
+#arrow-down i {
+  -webkit-animation-duration: 3s;
+  animation-delay: 3s;
 }

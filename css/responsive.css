@@ -1,0 +1,138 @@
+@media(min-width: 1300px) {
+    #mobile-nav,
+    span#mobile-nav-open-btn {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Large Devices */
+@media (min-width: 1280px) and (max-width: 1299px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    #mobile-nav,
+    span#mobile-nav-open-btn {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Medium Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    #services-tabs .tab-bg {
+        padding: 16px 30px;
+    }
+
+    .service-tab p {
+        line-height: 20px;
+    }
+
+    #mobile-nav,
+    span#mobile-nav-open-btn {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+    header nav div.container div.collapse.navbar-collapse {
+        display: none;
+    }
+
+    header nav div.container-fluid a img {
+        transform: translateY(-30%);
+        -webkit-transform: translateY(-30%)
+    }
+
+    .collapse:not(.show) {
+        display: inline-block;
+    }
+
+    .navbar-nav li {
+        padding: 0 25px 0 25px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%)
+    }
+
+    #home-heading h1 {
+        font-size: 41px;
+    }
+
+    #home-text p {
+        font-size: 13px;
+    }
+
+    .btn-general {
+        padding: 8px 35px 8x 35px;
+        font-size: 10px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    #statement-text h3 {
+        font-size: 20px;
+    }
+
+    /* .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #F4C613;
+        font-weight: 700;
+        border-bottom: 3px solid #F4C613;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    } */
+
+    .pricing-table .price h2 {
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+
+    .blog-post h4 {
+        font-size: 20px;
+    }
+
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+
+    .stats-item p {
+        line-height: 18px;
+    }
+
+    ul.office-details li {
+        margin-right: 15px;
+    }
+
+    ul.office-details li i {
+        width: 25px;
+    }
+
+}
+
+/* Extra Small Devices */
+@media (max-width: 768px) {
+    header nav div.container-fluid a img {
+        transform: translateY(-30%);
+        -webkit-transform: translateY(-30%)
+    }
+
+    #home-content-inner {
+        padding-top: 85px;
+    }
+
+    #home-heading h1 {
+        font-size: 28px;
+    }
+
+    #home-text p {
+        font-size: 14px;
+    }
+}

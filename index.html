@@ -32,11 +32,17 @@
   <!-- Magnific -->
   <link rel="stylesheet" href="css/magnific/magnific-popup.css">
 
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="css/animate/animate.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/site.css">
+
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- ===== Preloader ===== -->
   <div id="preloader">
     <div id="status">
@@ -44,6 +50,51 @@
     </div>
   </div>
   <!-- ===== Preloader Ends ===== -->
+
+  <!-- Navigation Bar Starts -->
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Mobile Menu -->
+        <span id="mobile-nav-open-btn">&#9776;</span>
+
+        <a href="#home" class="navbar-brand smooth-scroll">
+          <img src="images/logo/natureal-logo.png" alt="Natureal-Logo" class="img-logo">
+        </a>
+          
+        <div class="container">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#home" class="nav-link smooth-scroll">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link smooth-scroll">About</a></li>
+              <li class="nav-item"><a href="#team" class="nav-link smooth-scroll">Team</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link smooth-scroll">Services</a></li>
+              <li class="nav-item"><a href="#price" class="nav-link smooth-scroll">Price</a></li>
+              <li class="nav-item"><a href="#blog" class="nav-link smooth-scroll">Blog</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link smooth-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-nav">
+          <span id="mobile-nav-close-btn">&times;</span>
+          <div id="mobile-nav-content">
+            <ul class="nav">
+              <li class="nav-item"><a href="#home" class="nav-link smooth-scroll">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link smooth-scroll">About</a></li>
+              <li class="nav-item"><a href="#team" class="nav-link smooth-scroll">Team</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link smooth-scroll">Services</a></li>
+              <li class="nav-item"><a href="#price" class="nav-link smooth-scroll">Price</a></li>
+              <li class="nav-item"><a href="#blog" class="nav-link smooth-scroll">Blog</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link smooth-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Navigation Bar Ends-->
 
   <!-- ===== Home ===== -->
   <section id="home">
@@ -77,14 +128,14 @@
         </div>
 
         <div id="home-button">
-          <a class="btn btn-general btn-home" href="#about" title="Start Now" role="button">Start Now</a>
+          <a class="btn btn-general btn-home smooth-scroll" href="#about" title="Start Now" role="button">Start Now</a>
         </div>
 
       </div>
     </div>
 
     <!-- Arrow Down -->
-    <a id="arrow-down" href="#about">
+    <a id="arrow-down" href="#about" class="smooth-scroll">
       <i class="fas fa-angle-down" aria-hidden="true"></i>
     </a>
   </section>
@@ -98,7 +149,7 @@
         <div class="container">
           <div class="row">
             <!-- Left Content -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 wow animate__animated animate__slideInLeft" data-wow-duration="1s">
               <div id="about-left">
                 <div class="vertical-heading">
                   <h5>Who we are</h5>
@@ -107,7 +158,7 @@
               </div>
             </div>
             <!-- Right Content -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 wow animate__animated animate__slideInRight" data-wow-duration="1s">
               <div id="about-right">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
                   aspernatur harum liberto et nostrum sequi consequatur, tempore accusamus
@@ -124,7 +175,7 @@
 
           <!-- About Bottom -->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 wow animate__animated animate__fadeInUp" data-wow-duration="2s">
               <div id="about-image">
                 <img src="images/dog-image.jpg" alt="About Us" class="img-responsive fit-image" />
               </div>
@@ -139,7 +190,7 @@
       <div class="content-box-md">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4  wow animate__animated animate__fadeInLeft">
               <div class="about-item text-center">
                 <i class="fas fa-rocket" aria-hidden="true"></i>
                 <h3>Mission</h3>
@@ -150,7 +201,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 wow animate__animated animate__fadeInUp" data-wow-duration="1s">
               <div class="about-item text-center">
                 <i class="fa fa-eye" aria-hidden="true"></i>
                 <h3>Vision</h3>
@@ -161,7 +212,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 wow animate__animated animate__fadeInRight">
               <div class="about-item text-center">
                 <i class="fa fa-heart" aria-hidden="true"></i>
                 <h3>Passion</h3>
@@ -186,7 +237,7 @@
       <div class="container">
         <!-- First Row -->
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6  wow animate__animated animate__slideInLeft" data-wow-duration="1s">
             <div id="team-left">
               <div class="vertical-heading">
                 <h5>Who We Are</h5>
@@ -200,7 +251,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6 wow animate__animated animate__slideInRight" data-wow-duration="1s">
             <div id="team-members" class="owl-carousel owl-theme text-center">
               <!-- Member 01 -->
               <div class="team-member">
@@ -316,7 +367,7 @@
         <!-- Second Row -->
         <div id="progress-elements">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6  wow animate__animated animate__fadeInUp">
 
               <!-- Skill 01 -->
               <div class="skill">
@@ -329,7 +380,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <!-- Skill 02 -->
               <div class="skill">
                 <h4> Understanding Body Language </h4>
@@ -341,7 +392,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <!-- Skill 03 -->
               <div class="skill">
                 <h4> Careful Attention To Detail </h4>
@@ -353,7 +404,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <!-- Skill 04 -->
               <div class="skill">
                 <h4> Nurturing </h4>
@@ -377,7 +428,7 @@
     <div class="content-box-lg">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 col-sm-12  wow animate__animated animate__fadeIn">
             <div id="statement-text" class="text-center">
               <h3><i class="fa fa-quote-left"></i> We take care of your loved ones with love, <br/> providing them
               with the best quality services available. <i class="fa fa-quote-right"></i></h3>
@@ -397,7 +448,7 @@
         <div class="container">
           <!-- First Row -->
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center wow animate__animated animate__slideInDown">
               <div class="horizontal-heading">
                 <h5>What We Do</h5>
                 <h2>Our <strong>Services</strong></h2>
@@ -407,11 +458,11 @@
 
           <!-- Second Row -->
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7 col-sm-7 wow animate__animated animate__slideInLeft">
               <img src="../images/dog-services.jpeg" alt="services" class="img-responsive fit-image"/>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5 wow animate__animated animate__slideInRight">
               <!-- Services 01 -->
               <div class="service">
                 <div class="row">
@@ -420,7 +471,7 @@
                       <i class="fas fa-dog"></i>
                     </div>
                   </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10">
                     <h5> Service 01 </h5>
                     <h4> Walking </h4>
                     <p> lorem ipsum dolor sit amet, consectur adipisicing elit. Iusto tempora
@@ -433,12 +484,12 @@
               <!-- Services 02 -->
               <div class="service">
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2">
                     <div class="icon text-right">
                       <i class="fas fa-bath"></i>
                     </div>
                   </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10">
                     <h5> Service 02 </h5>
                     <h4> Bathing </h4>
                     <p> lorem ipsum dolor sit amet, consectur adipisicing elit. Iusto tempora
@@ -451,12 +502,12 @@
               <!-- Services 03 -->
               <div class="service">
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-2">
                     <div class="icon text-right">
                       <i class="fas fa-paw"></i>
                     </div>
                   </div>
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-10">
                     <h5> Service 03 </h5>
                     <h4> Socializing </h4>
                     <p> lorem ipsum dolor sit amet, consectur adipisicing elit. Iusto tempora
@@ -491,10 +542,10 @@
               <div id="service-tab-1" class="service-tab">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <img src="../images/dog-service-01.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <div class="tab-bg">
                         <h2>01</h2>
                         <h3>Nature's Curiosity</h3>
@@ -517,10 +568,10 @@
               <div id="service-tab-2" class="service-tab">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <img src="../images/dog-service-02.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <div class="tab-bg">
                         <h2>02</h2>
                         <h3>Luxurious Bath</h3>
@@ -543,10 +594,10 @@
               <div id="service-tab-3" class="service-tab">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <img src="../images/dog-service-03.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <div class="tab-bg">
                         <h2>03</h2>
                         <h3>Friendly Environment</h3>
@@ -569,10 +620,10 @@
               <div id="service-tab-4" class="service-tab">
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <img src="../images/dog-service-04.jpeg" alt="Dog walking" class="img-responsive fit-image"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6">
                       <div class="tab-bg">
                         <h2>04</h2>
                         <h3>High-Quality Food</h3>
@@ -604,7 +655,7 @@
     <div class="content-box-md">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow animate__animated animate__slideInLeft">
             <div class="vertical-heading">
               <h5>See The Pets</h5>
               <h2>Meet Our <br>Beloved <strong>Pets</strong></h2>
@@ -624,7 +675,7 @@
       </div>
 
       <!-- Portfolio Items Wrapper -->
-      <section id="pets-wrapper">
+      <section id="pets-wrapper" class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
         <div class="container-fluid">
           <div class="row no-gutter" id="isotope-container">
             <div class="col-md-3 retriever">
@@ -783,14 +834,14 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-5">
+        <div class="col-md-5 col-sm-5 wow animate__animated animate__slideInLeft">
           <div class="vertical-heading">
             <h5>Who we are</h5>
             <h2>What Our <br/><strong>Customers</strong> Says</h2>
           </div>
         </div>
 
-        <div class="col-md-7">
+        <div class="col-md-7 col-sm-7 wow animate__animated animate__fadeIn" data-wow-duration="2s">
           <div id="testimonial-slider" class="owl-carousel owl-theme">
             <!-- Testimonials 01 -->
             <div class="testimonial">
@@ -905,7 +956,7 @@
     <div class="content-box-md">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center wow animate__animated animate__slideInDown">
             <div class="horizontal-heading">
               <h5>Lovely Customers</h5>
               <h2>Our Pricing</h2>
@@ -914,7 +965,7 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 wow animate__animated animate__fadeInLeft">
             <div class="pricing-table">
               <div class="type">
                 <h4>Paws</h4>
@@ -922,10 +973,10 @@
 
               <div class="price">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <h2><span class="dollar">&#36;</span>29<br/><span class="month">Month</span></h2>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-sm-8">
                     <p>You will get all these awesome services with this great price. Get it now!</p>
                   </div>
                 </div>
@@ -945,7 +996,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 wow animate__animated animate__fadeInUp" data-wow-duration="3s">
             <div class="pricing-table black">
               <div class="type">
                 <h4>Pawmium</h4>
@@ -953,10 +1004,10 @@
 
               <div class="price">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <h2><span class="dollar">&#36;</span>57<br/><span class="month">Month</span></h2>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-sm-8">
                     <p>You will get all these awesome services with this great price. Get it now!</p>
                   </div>
                 </div>
@@ -976,7 +1027,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 wow animate__animated animate__fadeInRight">
             <div class="pricing-table">
               <div class="type">
                 <h4>Pawfessional</h4>
@@ -984,10 +1035,10 @@
 
               <div class="price">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4 col-sm-4">
                     <h2><span class="dollar">&#36;</span>96<br/><span class="month">Month</span></h2>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-sm-8">
                     <p>You will get all these awesome services with this great price. Get it now!</p>
                   </div>
                 </div>
@@ -1017,7 +1068,7 @@
     <div class="content-box-md">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow animate__animated animate__slideInLeft">
             <div class="vertical-heading">
               <h5>Fun Facts</h5>
               <h2>We Deliver <br/><strong>Excellent</strong> Services</h2>
@@ -1025,7 +1076,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row wow animate__animated animate__fadeInUp" data-wow-duration="2s">
           <!-- Box 01 -->
           <div class="col-md-3">
             <div class="stats-item text-center">
@@ -1080,7 +1131,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row wow animate__animated animate__bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s">
           <div class="col-md-12">
             <div id="clients-list" class="owl-carousel owl-theme">
               <!-- Client 01 -->
@@ -1128,7 +1179,7 @@
     <div class="content-box-md">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-5 wow animate__animated animate__slideInLeft">
             <div id="blog-left">
               <div class="vertical-heading">
                 <h5>Latest News</h5>
@@ -1143,9 +1194,9 @@
             </div>
           </div>
 
-          <div class="col-md-7">
+          <div class="col-md-7 col-sm-7 wow animate__animated animate__fadeInUp" data-wow-duration="3s">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <div class="blog-post">
                   <h4>Your Post Title</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga soluta repellendus distinctio harum, 
@@ -1155,10 +1206,10 @@
 
                   <div class="post-meta">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <p><img src="images/blogs/author1.jpg" alt="Author-01" class="rounded-circle img-circle">Sarah Watrous</p>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <p class="text-right">October 02, 2019</p>
                       </div>
                     </div>
@@ -1166,7 +1217,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-6">
                 <div class="blog-post">
                   <h4>Your Post Title</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fuga soluta repellendus distinctio harum, 
@@ -1176,10 +1227,10 @@
 
                   <div class="post-meta">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <p><img src="images/blogs/author2.jpg" alt="Author-02" class="rounded-circle img-circle">Jenn Yu</p>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-6">
                         <p class="text-right">November 15, 2019</p>
                       </div>
                     </div>
@@ -1199,7 +1250,7 @@
     <div class="content-box-md">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6">
             <div id="contact-left">
               <div class="vertical-heading">
                 <h5>Who We Are</h5>
@@ -1209,7 +1260,7 @@
 
               <div id="offices">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="office">
                       <h4>Europe</h4>
                       <ul class="office-details">
@@ -1220,7 +1271,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-sm-6">
                     <div class="office">
                       <h4>United States</h4>
                       <ul class="office-details">
@@ -1301,6 +1352,23 @@
     </div>
   </section>
   <!-- Google Map Ends -->
+  <footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2020 All Rights Reserved By <span>Natureal Inc.</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back To Top -->
+    <a href="#home" title="Home" role="button" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll">
+      <i class="fas fa-angle-up"></i>
+    </a>
+  </footer>
+  <!-- Footer Starts -->
+
+  <!-- Footer Ends -->
 
   <!-- Temporary Space -->
   <section>
@@ -1333,10 +1401,18 @@
   <script src="js/magnific/jquery.magnific-popup.min.js"></script>
 
   <!-- Google Map JS -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
-  <!--
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPUvvIXPgYc6P9cd-FsJt00aEdJlZaQEw&callback=initMap"></script>
+  
+  <!-- Google Maps Development Purposes
     <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap">
   -->
+
+  <!-- Easing JS -->
+  <script src="js/easing/jquery.easing.1.3.js"></script>
+
+  <!-- WOW JS -->
+  <script src="js/wow/wow.min.js"></script>
+
   <!-- Custom JS -->
   <script src="js/script.js"></script>
 </body>
